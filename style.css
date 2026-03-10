@@ -1,151 +1,81 @@
-/* 基本設定 */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth; /* 平滑滾動 */
+:root {
+    --bg-color: #ffffff;
+    --text-primary: #1d1d1f;
+    --text-secondary: #86868b;
+    --accent: #0071e3;
+    --card-bg: #f5f5f7;
 }
 
 body {
-    font-family: 'Noto Sans TC', sans-serif;
-    line-height: 1.6;
-    color: #333;
-}
-
-/* 導航列 */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 10%;
-    background: #fff;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-nav .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #2575fc;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    color: #2575fc;
-}
-
-/* 英雄區 */
-.hero {
-    height: 100vh;
-    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    color: #fff;
+    min-height: 100vh;
 }
 
-.hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-}
-
-.hero h1 span {
-    border-bottom: 4px solid #fff;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    opacity: 0.9;
-}
-
-.btn {
-    padding: 12px 30px;
-    background: #fff;
-    color: #2575fc;
-    text-decoration: none;
-    border-radius: 50px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #f0f0f0;
-    transform: translateY(-3px);
-}
-
-/* 區塊通用樣式 */
-section {
-    padding: 100px 10%;
+.container {
+    width: 90%;
+    max-width: 500px;
     text-align: center;
 }
 
-.bg-light {
-    background: #f9f9f9;
+header {
+    margin-bottom: 3rem;
 }
 
-h2 {
+h1 {
     font-size: 2.5rem;
-    margin-bottom: 40px;
-    position: relative;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.5rem;
 }
 
-/* 作品集網格 */
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 1.1rem;
 }
 
-.card {
-    background: #fff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-    transition: 0.3s;
+.lab-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
-.card:hover {
-    transform: translateY(-10px);
-}
-
-/* 聯絡區 */
-.contact-link {
-    font-size: 1.5rem;
-    color: #2575fc;
+/* 卡片式設計 */
+.lab-card {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--card-bg);
+    border-radius: 12px;
     text-decoration: none;
+    color: var(--text-primary);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.lab-card:hover {
+    transform: scale(1.02);
+    background-color: #e8e8ed;
+}
+
+.number {
+    font-size: 0.8rem;
     font-weight: bold;
+    color: var(--accent);
+    margin-right: 15px;
+    opacity: 0.7;
+}
+
+.label {
+    font-weight: 500;
 }
 
 footer {
-    padding: 20px;
-    background: #333;
-    color: #fff;
-    text-align: center;
-    font-size: 0.9rem;
-}
-
-/* 響應式調整 */
-@media (max-width: 768px) {
-    nav ul { display: none; } /* 手機端暫時隱藏選單，或可改為漢堡選單 */
-    .hero h1 { font-size: 2.5rem; }
+    margin-top: 3rem;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
 }

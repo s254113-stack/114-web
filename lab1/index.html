@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>極簡抽籤系統</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="draw-container">
+        <h1>Lucky Draw</h1>
+        
+        <div class="input-section">
+            <label for="nameList">請輸入名單 (每行一個名字)</label>
+            <textarea id="nameList" placeholder="例如：&#10;王小明&#10;李大華&#10;陳曉東"></textarea>
+        </div>
+
+        <button id="drawBtn">抽出幸運兒</button>
+
+        <div class="result-section">
+            <div id="resultDisplay" class="typewriter"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
