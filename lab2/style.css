@@ -1,0 +1,49 @@
+/* 整體頁面設定 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* 主標題 */
+h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+/* 副標題 */
+h2 {
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+/* 段落 */
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* 分隔線 */
+hr {
+    margin: 20px auto;
+    width: 60%;
+    border: 1px solid #ddd;
+}
+
+/* 連結按鈕 */
+a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* 滑鼠移上效果 */
+a:hover {
+    background-color: #2980b9;
+}
