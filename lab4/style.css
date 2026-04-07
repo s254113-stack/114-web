@@ -1,0 +1,130 @@
+:root {
+    --bg-color: #ffffff;
+    --text-primary: #1d1d1f;
+    --text-secondary: #86868b;
+    --accent: #0071e3;
+    --card-bg: #f5f5f7;
+    --border-color: #d2d2d7;
+}
+
+body {
+    margin: 0;
+    padding: 60px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    display: flex;
+    justify-content: center;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: var(--text-secondary);
+    font-size: 1.2rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 2.5rem 0 1.2rem 0;
+}
+
+/* 列表與卡片設計 */
+.lab-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.lab-card {
+    display: flex;
+    align-items: center;
+    padding: 18px 24px;
+    background-color: var(--card-bg);
+    border-radius: 14px;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.lab-card:hover {
+    transform: scale(1.02);
+    background-color: #ebebee;
+}
+
+.number {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: var(--accent);
+    margin-right: 15px;
+    min-width: 25px;
+}
+
+.label {
+    font-weight: 500;
+}
+
+/* 表格設計 */
+.table-container {
+    overflow-x: auto;
+    border-radius: 14px;
+    background-color: var(--card-bg);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+}
+
+th, td {
+    padding: 16px;
+    text-align: center;
+    border-bottom: 1px solid var(--border-color);
+}
+
+th {
+    background-color: #e8e8ed;
+    color: var(--text-secondary);
+    font-weight: 600;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+/* 頁尾與按鈕 */
+footer {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: 500;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.2s;
+}
+
+.back-btn:hover {
+    background-color: #f0f7ff;
+}
